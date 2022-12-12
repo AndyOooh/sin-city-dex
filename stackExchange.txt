@@ -1,0 +1,11 @@
+wagmi/ethers sendTransaction with 0x quote failing 
+
+I'm trying to swap tokens using 0x APIs quote endpoint with wagmi/ethers.
+I get a quote, approve the amount with `sellTokenContract.approve()` and paste the quote as an argument to `sendTransaction()`. This gives me:
+
+    Error: invalid transaction key: price
+
+So in a similar post I 
+https://ethereum.stackexchange.com/questions/127554/invalid-transaction-key-price-swap-transaction-fails-using-ethers-js-on-ropst
+
+https://goerli.api.0x.org/swap/v1/quote?
