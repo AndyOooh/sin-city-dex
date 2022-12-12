@@ -5,9 +5,9 @@ import { Logo } from '../../assets/Logo';
 
 export const Header = () => {
   return (
-    <header className='navbar bg-base-100'>
+    <header className='navbar bg-primary text-primary-content whitespace-nowrap font-bold'>
       <div className='navbar-start'>
-        <div className='dropdown'>
+        <nav className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -27,19 +27,19 @@ export const Header = () => {
             tabIndex={0}
             className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'>
             <li>
-              <a>Item 1</a>
+              <NavLink to={'/dex'}>Dex1</NavLink>
             </li>
 
             <li>
-              <a>Item 2</a>
+              <NavLink to={'/casino'}>Casino</NavLink>
             </li>
           </ul>
-        </div>
+        </nav>
         <NavLink to={'/'} className='btn btn-ghost normal-case text-xl'>
           <Logo />
         </NavLink>
       </div>
-      <div className='navbar-center hidden lg:flex'>
+      <nav className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
           <li>
             <NavLink to={'/dex'}>Dex1</NavLink>
@@ -48,9 +48,10 @@ export const Header = () => {
             <NavLink to={'/casino'}>Casino</NavLink>
           </li>
         </ul>
-      </div>
-      <div className='navbar-end'>
-        <ConnectButton />
+      </nav>
+      <div className='navbar-end text-xs font-extralight'>
+        {/* <ConnectButton accountStatus={{ smallScreen: 'avatar', largeScreen: 'full' }} /> */}
+        <ConnectButton  />
       </div>
     </header>
   );
