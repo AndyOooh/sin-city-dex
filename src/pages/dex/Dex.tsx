@@ -41,7 +41,6 @@ export const Dex = () => {
     getAndSetTokenList();
   }, [getAndSetTokenList]);
 
-
   useEffect(() => {
     const getAndSetPrice = async () => {
       const price = await getPrice(currentPair, formValue);
@@ -135,8 +134,7 @@ export const Dex = () => {
           currentPair={currentPair}
         />
       </Modal>
-      <section className='card card-compact max-w-md bg-primary text-primary-content mx-4'>
-      {/* <section className='card card-compact bg-base-100 shadow-xl '> */}
+      <section className='card card-compact max-w-md bg-base-300 text-base-content mx-4 '>
         <div className='card-body'>
           <h2 className='card-title'>Swap tokens</h2>
           <div className='w-full relative'>
@@ -147,8 +145,10 @@ export const Dex = () => {
               pair={currentPair}
               valueChange={e => handleValueChange(e, 'sell')}
             />
-            <button className='btn btn-secondary btn-square flip-button' onClick={handleFlipBuySell}>
-              <MdOutlineSwapVert size='2rem' />
+            <button
+              className='btn-sm btn-secondary btn-square flip-button rounded-lg flex justify-center items-center border-4 border-solid border-base-300'
+              onClick={handleFlipBuySell}>
+              <MdOutlineSwapVert size='1.4rem' />
             </button>
             <TokenInputRow
               side='buy'
@@ -173,7 +173,7 @@ export const Dex = () => {
           )}
 
           <div className='card-actions justify-end'>
-            <button onClick={handleSwap} className='btn btn-secondary w-full'>
+            <button onClick={handleSwap} className='btn btn-accent w-full'>
               Swap
             </button>
             {currentPair.buy && formValue.amount > 0 && (

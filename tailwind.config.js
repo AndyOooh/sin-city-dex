@@ -6,18 +6,14 @@ module.exports = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    styled: true, // defauæt is true
+    styled: true, // default is true
     themes: [
       // 'light',
-      // 'dark',
-      // 'cupcake',
       // 'bumblebee',
       // 'retro',
       'coffee',
-      // 'halloween',
       // 'black',
-      // 'luxury',
-      'business',
+      // 'business',
     ],
     // these are all defaults
     base: true,
@@ -25,6 +21,6 @@ module.exports = {
     logs: true,
     rtl: false,
     prefix: '',
-    darkTheme: 'dark',
+    darkTheme: 'black',
   },
 };

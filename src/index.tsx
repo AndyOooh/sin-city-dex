@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { WagmiConfig } from 'wagmi';
 import { chains, client } from './wagmi';
-import '@rainbow-me/rainbowkit/styles.css';
 import { darkTheme, midnightTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import '@rainbow-me/rainbowkit/styles.css';
 
 import './styles/index.scss';
 import App from './App';
