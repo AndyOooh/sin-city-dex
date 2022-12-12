@@ -5,7 +5,7 @@ import { Logo } from '../../assets/Logo';
 
 export const Header = () => {
   return (
-    <header className='navbar bg-primary text-primary-content whitespace-nowrap font-bold'>
+    <header className='navbar bg-base-300 whitespace-nowrap font-bold'>
       <div className='navbar-start'>
         <nav className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden'>
@@ -27,7 +27,7 @@ export const Header = () => {
             tabIndex={0}
             className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'>
             <li>
-              <NavLink to={'/dex'}>Dex1</NavLink>
+              <NavLink to={'/dex'}>Dex</NavLink>
             </li>
 
             <li>
@@ -42,7 +42,7 @@ export const Header = () => {
       <nav className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>
           <li>
-            <NavLink to={'/dex'}>Dex1</NavLink>
+            <NavLink to={'/dex'}>Dex</NavLink>
           </li>
           <li>
             <NavLink to={'/casino'}>Casino</NavLink>
@@ -51,7 +51,7 @@ export const Header = () => {
       </nav>
       <div className='navbar-end text-xs font-extralight'>
         {/* <ConnectButton accountStatus={{ smallScreen: 'avatar', largeScreen: 'full' }} /> */}
-        <ConnectButton  />
+        <ConnectButton />
       </div>
     </header>
   );
