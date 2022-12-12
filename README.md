@@ -1,4 +1,4 @@
 ## TODO
-- [ ] Lazy load token lists.
+- [ ] Fix token lists fetching: Lazy loading or memoization.
 - [ ] Handle fetching state in UI (buttons).
-- [ ] Show buy amount in Tokenrow (side='buy') when price fetched.
+- [ ] Show buyAmount in Tokenrow when price fetched.
