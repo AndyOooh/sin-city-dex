@@ -1,14 +1,14 @@
 import { FaSearch } from 'react-icons/fa';
 import { Token } from '../../types/types';
 
-type SwapModalProps = {
+type Props = {
   side: string;
   tokens: Token[];
   setPair: (prev: any) => void;
   setModalVisible: (prev: boolean) => void;
 };
 
-export const SwapModal = ({ side, tokens, setPair, setModalVisible }: SwapModalProps) => {
+export const TokenListModal = ({ side, tokens, setPair, setModalVisible }: Props) => {
   console.log('🚀  file: SwapModal.tsx:12  tokens', tokens);
   const freqentSymbols = ['ETH', 'UNI', 'LINK', 'DAI', 'WETH', 'WBTC', 'MTK'];
   const frequentTokens = tokens.filter(token => freqentSymbols.includes(token.symbol));

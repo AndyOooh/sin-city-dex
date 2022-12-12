@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '@rainbow-me/rainbowkit/styles.css';
-import { darkTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { BrowserRouter } from 'react-router-dom';
 import { WagmiConfig } from 'wagmi';
 import { chains, client } from './wagmi';
-import { BrowserRouter } from 'react-router-dom';
+import '@rainbow-me/rainbowkit/styles.css';
+import { darkTheme, midnightTheme, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
 import './styles/index.scss';
 import App from './App';
@@ -15,12 +15,14 @@ root.render(
     <WagmiConfig client={client}>
       <BrowserRouter>
         <RainbowKitProvider
+          // modalSize='compact'
           chains={chains}
           theme={darkTheme({
-            accentColor: '#95ede7',
-            accentColorForeground: '#a356bf',
-            overlayBlur: 'large',
-          })}>
+          // accentColor: '#95ede7',
+          // accentColorForeground: '#a356bf',
+          overlayBlur: 'large',
+          })}
+        >
           <App />
         </RainbowKitProvider>
       </BrowserRouter>

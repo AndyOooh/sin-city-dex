@@ -10,9 +10,6 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // color: white;
-
-  // background-color: #141e37;
 }
 
 code {
@@ -29,7 +26,7 @@ code {
 }
 
 .even-shadow {
-  box-shadow: 0 0 0.25rem 0.1rem rgb(255, 255, 255);
+  box-shadow: 0 0 0.6rem 0.02rem rgb(255, 255, 255);
 }
 
 input {
@@ -54,18 +51,4 @@ input[type='number'] {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
-  background-color: #94a3b8;
-  border-radius: 15%;
-  border: 2px solid #0f172a;
-
-  &:hover {
-    background-color: #0f172a;
-    border: 2px solid #94a3b8;
-    cursor: pointer;
-  }
-
-  // background-color: pink;
-  // width: 4rem;
-  // height: 4rem;
 }

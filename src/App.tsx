@@ -1,10 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+import { themeChange } from 'theme-change';
 
 import { Header } from './components/header/Header';
 import { Casino } from './pages/casino/Casino';
 import { Dex } from './pages/dex/Dex';
 
 function App() {
+  useEffect(() => {
+    themeChange(false);
+    // 👆 false parameter is required for react project
+  }, []);
   return (
     <div className='app'>
       <Header />
@@ -19,4 +25,3 @@ function App() {
 }
 
 export default App;
-

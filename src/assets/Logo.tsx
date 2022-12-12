@@ -1,6 +1,7 @@
 import React from 'react';
 
-import chipPng from './chip.png';
+// import chipPng from './chip.png';
+import chipPng from './chip-transparent.png';
 
 export const Logo = () => {
   return (
